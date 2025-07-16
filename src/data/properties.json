@@ -1,0 +1,209 @@
+[
+  {
+    "id": "villa-seaview-01",
+    "title": "Luxury 3+1 Villa in Kyrenia",
+    "price": 350000,
+    "location": "Kyrenia",
+    "type": "Villa",
+    "status": "Available",
+    "isFeatured": true,
+    "dateAdded": "2025-07-15T10:00:00Z",
+    "description": "Stunning 3+1 villa with panoramic sea views in the heart of Kyrenia. Features modern design, private pool, and beautiful Mediterranean garden. Perfect for families or as a vacation home.",
+    "images": [
+      "/images/villa-seaview-01-1.jpg",
+      "/images/villa-seaview-01-2.jpg",
+      "/images/villa-seaview-01-3.jpg"
+    ],
+    "features": {
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqm": 180,
+      "pool": true,
+      "seaView": true
+    },
+    "coordinates": {
+      "lat": 35.3362,
+      "lng": 33.3250
+    }
+  },
+  {
+    "id": "apartment-famagusta-02",
+    "title": "Modern 2+1 Apartment in Famagusta",
+    "price": 180000,
+    "location": "Famagusta",
+    "type": "Apartment",
+    "status": "Available",
+    "isFeatured": true,
+    "dateAdded": "2025-07-10T14:30:00Z",
+    "description": "Contemporary 2+1 apartment in a prime location in Famagusta. Features modern amenities, balcony with city views, and close to all conveniences.",
+    "images": [
+      "/images/apartment-famagusta-02-1.jpg",
+      "/images/apartment-famagusta-02-2.jpg"
+    ],
+    "features": {
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqm": 95,
+      "pool": false,
+      "seaView": false
+    },
+    "coordinates": {
+      "lat": 35.1264,
+      "lng": 33.9506
+    }
+  },
+  {
+    "id": "penthouse-iskele-03",
+    "title": "Exclusive Penthouse in Iskele",
+    "price": 450000,
+    "location": "Iskele",
+    "type": "Penthouse",
+    "status": "Available",
+    "isFeatured": true,
+    "dateAdded": "2025-07-08T09:15:00Z",
+    "description": "Luxurious penthouse with 360-degree views of the Mediterranean Sea and mountains. Features premium finishes, private terrace, and exclusive amenities.",
+    "images": [
+      "/images/penthouse-iskele-03-1.jpg",
+      "/images/penthouse-iskele-03-2.jpg",
+      "/images/penthouse-iskele-03-3.jpg"
+    ],
+    "features": {
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqm": 220,
+      "pool": true,
+      "seaView": true
+    },
+    "coordinates": {
+      "lat": 35.2931,
+      "lng": 33.8303
+    }
+  },
+  {
+    "id": "villa-bellapais-04",
+    "title": "Traditional Villa in Bellapais",
+    "price": 280000,
+    "location": "Bellapais",
+    "type": "Villa",
+    "status": "Available",
+    "isFeatured": false,
+    "dateAdded": "2025-07-05T16:45:00Z",
+    "description": "Charming traditional villa in the historic village of Bellapais. Features stone architecture, mountain views, and peaceful surroundings.",
+    "images": [
+      "/images/villa-bellapais-04-1.jpg",
+      "/images/villa-bellapais-04-2.jpg"
+    ],
+    "features": {
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqm": 160,
+      "pool": false,
+      "seaView": false
+    },
+    "coordinates": {
+      "lat": 35.3547,
+      "lng": 33.3514
+    }
+  },
+  {
+    "id": "apartment-kyrenia-05",
+    "title": "Seafront 1+1 Apartment in Kyrenia",
+    "price": 145000,
+    "location": "Kyrenia",
+    "type": "Apartment",
+    "status": "Available",
+    "isFeatured": false,
+    "dateAdded": "2025-07-01T11:20:00Z",
+    "description": "Cozy 1+1 apartment right on the seafront in Kyrenia. Perfect for first-time buyers or investment property. Walking distance to restaurants and shops.",
+    "images": [
+      "/images/apartment-kyrenia-05-1.jpg"
+    ],
+    "features": {
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqm": 65,
+      "pool": false,
+      "seaView": true
+    },
+    "coordinates": {
+      "lat": 35.3415,
+      "lng": 33.3192
+    }
+  },
+  {
+    "id": "land-girne-06",
+    "title": "Building Plot in Girne",
+    "price": 95000,
+    "location": "Girne",
+    "type": "Land",
+    "status": "Available",
+    "isFeatured": false,
+    "dateAdded": "2025-06-28T08:00:00Z",
+    "description": "Prime building plot in Girne with planning permission for villa construction. Great investment opportunity with mountain and partial sea views.",
+    "images": [
+      "/images/land-girne-06-1.jpg"
+    ],
+    "features": {
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "area_sqm": 800,
+      "pool": false,
+      "seaView": true
+    },
+    "coordinates": {
+      "lat": 35.3425,
+      "lng": 33.3100
+    }
+  },
+  {
+    "id": "villa-catalkoy-07",
+    "title": "4+1 Family Villa in Catalkoy",
+    "price": 320000,
+    "location": "Catalkoy",
+    "type": "Villa",
+    "status": "Sold",
+    "isFeatured": false,
+    "dateAdded": "2025-06-25T13:30:00Z",
+    "description": "Spacious 4+1 family villa in the peaceful village of Catalkoy. Features large garden, garage, and mountain views. Recently sold.",
+    "images": [
+      "/images/villa-catalkoy-07-1.jpg",
+      "/images/villa-catalkoy-07-2.jpg"
+    ],
+    "features": {
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqm": 200,
+      "pool": true,
+      "seaView": false
+    },
+    "coordinates": {
+      "lat": 35.3289,
+      "lng": 33.2975
+    }
+  },
+  {
+    "id": "apartment-lefkosa-08",
+    "title": "City Center Apartment in Lefkosa",
+    "price": 125000,
+    "location": "Lefkosa",
+    "type": "Apartment",
+    "status": "Available",
+    "isFeatured": false,
+    "dateAdded": "2025-06-20T10:15:00Z",
+    "description": "Convenient 2+1 apartment in the heart of Lefkosa (Nicosia). Perfect for city living with easy access to shops, restaurants, and business district.",
+    "images": [
+      "/images/apartment-lefkosa-08-1.jpg"
+    ],
+    "features": {
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqm": 85,
+      "pool": false,
+      "seaView": false
+    },
+    "coordinates": {
+      "lat": 35.1856,
+      "lng": 33.3823
+    }
+  }
+]
