@@ -11,30 +11,31 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   return (
-    <Card className="hover:shadow-lg transition-shadow">
-      <div className="relative">
+    <Card className="hover:shadow-custom transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up">
+      <div className="relative overflow-hidden">
         <img
           src={property.images[0] || '/images/placeholder.jpg'}
           alt={property.title}
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.src = '/images/placeholder.jpg';
           }}
         />
-        <div className="absolute top-2 right-2">
-          <span className={`px-2 py-1 rounded text-xs font-semibold ${
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute top-3 right-3">
+          <span className={`px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm ${
             property.status === 'Available' 
-              ? 'bg-green-100 text-green-800' 
-              : 'bg-red-100 text-red-800'
+              ? 'bg-green-500/90 text-white' 
+              : 'bg-red-500/90 text-white'
           }`}>
             {property.status}
           </span>
         </div>
         {property.isFeatured && (
-          <div className="absolute top-2 left-2">
-            <span className="px-2 py-1 rounded text-xs font-semibold bg-blue-100 text-blue-800">
-              Featured
+          <div className="absolute top-3 left-3">
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/90 text-white backdrop-blur-sm">
+              ⭐ Featured
             </span>
           </div>
         )}
@@ -83,14 +84,14 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           </div>
           <div className="flex items-center space-x-2">
             {property.features.pool && (
-              <span className="text-blue-600" title="Pool">
+              <span className="text-blue-500 bg-blue-50 p-1 rounded-full" title="Pool">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 10s3-1 4-1 4 1 4 1 3-1 4-1 4 1 4 1v1s-3 1-4 1-4-1-4-1-3 1-4 1-4-1-4-1v-1z" />
                 </svg>
               </span>
             )}
             {property.features.seaView && (
-              <span className="text-blue-600" title="Sea View">
+              <span className="text-blue-500 bg-blue-50 p-1 rounded-full" title="Sea View">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 12l-2 2v4h4v-4l-2-2z" />
                   <path d="M2 8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2s-.9-2-2-2H4c-1.1 0-2 .9-2 2z" />
@@ -105,7 +106,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
             {formatPrice(property.price)}
           </div>
           <Link to={`/properties/${property.id}`}>
-            <Button size="sm">
+            <Button size="sm" className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 transform hover:scale-105">
               View Details
             </Button>
           </Link>
