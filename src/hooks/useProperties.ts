@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
-import type { Property, FilterState } from '../types';
+import type { Property } from '../types';
+import type { FilterState } from '../contexts/FilterContext';
 import propertiesData from '../data/properties.json';
 
 const useProperties = () => {
@@ -43,19 +44,32 @@ const useProperties = () => {
       // Фильтрация по типу
       if (filters.type && filters.type !== 'all') {
         filtered = filtered.filter(property => property.type === filters.type);
-      }
-
-      // Фильтрация по цене
-      if (filters.priceRange) {
+      }      // Фильтрация по цене
+      if (filters.minPrice !== undefined && filters.maxPrice !== undefined) {
         filtered = filtered.filter(property => 
-          property.price >= filters.priceRange!.min && 
-          property.price <= filters.priceRange!.max
+          property.price >= filters.minPrice! &&
+          property.price <= filters.maxPrice!
         );
       }
 
       // Фильтрация по количеству спален
       if (filters.bedrooms && filters.bedrooms > 0) {
         filtered = filtered.filter(property => property.features.bedrooms >= filters.bedrooms!);
+      }
+
+      // Фильтрация по количеству ванных комнат
+      if (filters.bathrooms && filters.bathrooms > 0) {
+        filtered = filtered.filter(property => property.features.bathrooms >= filters.bathrooms!);
+      }
+
+      // Поиск по тексту
+      if (filters.searchTerm && filters.searchTerm.length > 0) {
+        const searchLower = filters.searchTerm.toLowerCase();
+        filtered = filtered.filter(property => 
+          property.title.toLowerCase().includes(searchLower) ||
+          property.description.toLowerCase().includes(searchLower) ||
+          property.location.toLowerCase().includes(searchLower)
+        );
       }
 
       // Сортировка
