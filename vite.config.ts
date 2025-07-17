@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/test_3files/', // GitHub Pages repository name
+  base: '/north-cyprus-real-estate/', // Замените на имя вашего репозитория
   build: {
     outDir: 'dist',
     sourcemap: true,

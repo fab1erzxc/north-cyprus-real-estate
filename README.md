@@ -35,17 +35,20 @@ Visit the live application: [North Cyprus Real Estate](https://yourusername.gith
 ### Steps
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/test_3files.git
    cd test_3files
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install --legacy-peer-deps
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -96,24 +99,28 @@ src/
 The project was built following an agile methodology with 4 main sprints:
 
 ### Sprint 1: Project Setup & Core Layout
+
 - ✅ Vite + React + TypeScript setup
 - ✅ Tailwind CSS configuration
 - ✅ Basic layout components
 - ✅ React Router setup
 
 ### Sprint 2: Data Handling & Static Display
+
 - ✅ Property data structure
 - ✅ Property components (Card, Grid)
 - ✅ Basic filtering
 - ✅ Responsive design
 
 ### Sprint 3: Advanced Features
+
 - ✅ Interactive maps with Leaflet
 - ✅ Advanced search and filtering
 - ✅ State management with Context
 - ✅ Performance optimizations
 
 ### Sprint 4: Finalization & Deployment
+
 - ✅ SEO optimization
 - ✅ Image lazy loading
 - ✅ GitHub Pages deployment
@@ -166,9 +173,9 @@ If you are developing a production application, we recommend updating the config
 
 ```js
 export default tseslint.config([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
 
@@ -183,40 +190,40 @@ export default tseslint.config([
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```
 
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
 // eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
 
 export default tseslint.config([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
       // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
+      reactX.configs["recommended-typescript"],
       // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```
